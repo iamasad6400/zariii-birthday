@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f6e8e5">
+<meta name="description" content="A birthday surprise made with love for Zara Ijaaz, lovingly called Zariii.">
+<title>For Zara Ijaaz — My Zariii ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Noto+Nastaliq+Urdu:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#50313d;--wine:#71394e;--rose:#b86d7f;--pink:#f0d7d8;--blush:#f8edeb;--ivory:#fffaf4;--gold:#b99462;--line:#e8d6ca;--shadow:0 24px 70px rgba(93,53,62,.12)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:'DM Sans',sans-serif;background:#f8efeb;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;background:linear-gradient(135deg,#fffaf5 0%,#f6e5e3 48%,#f0d8da 100%)}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.22;background-image:radial-gradient(#b99462 0.55px,transparent .55px);background-size:18px 18px}
+button{font:inherit}
+a{color:inherit}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(255,250,244,.82);backdrop-filter:blur(16px);border-bottom:1px solid #e9d9d0}
+.nav{max-width:1120px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-family:'Great Vibes',cursive;font-size:1.8rem;color:var(--wine);white-space:nowrap}
+.navlinks{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+.navlinks button{border:1px solid transparent;background:transparent;color:#805a62;padding:9px 13px;border-radius:30px;font-size:.82rem;cursor:pointer}
+.navlinks button.active,.navlinks button:hover{background:#f2e0df;border-color:#e7c9c8;color:var(--wine)}
+.page{display:none;min-height:calc(100vh - 62px);padding:54px 18px 72px;animation:fade .6s ease}
+.page.active{display:block}
+.wrap{width:min(1040px,100%);margin:auto}
+.kicker{text-transform:uppercase;letter-spacing:.26em;font-size:.68rem;font-weight:700;color:var(--gold)}
+.script{font-family:'Great Vibes',cursive;color:var(--rose);font-weight:400}
+h1,h2,h3{font-family:'Playfair Display',serif;color:var(--wine);font-weight:500}
+h1{font-size:clamp(3.2rem,9vw,7rem);line-height:.96;margin:16px 0}
+h2{font-size:clamp(2rem,5vw,3.5rem);margin:10px 0 18px}
+h3{font-size:1.5rem}
+p{line-height:1.9}
+.hero{min-height:calc(100vh - 180px);display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px}
+.hero-copy{text-align:left;padding:20px 0}
+.hero-copy .sub{max-width:550px;color:#795c61;font-size:1.05rem}
+.hero-name{font-family:'Great Vibes',cursive;color:#b96b7d;font-size:clamp(3.3rem,8vw,6rem);line-height:1.1}
+.hero-photo{position:relative}
+.hero-photo img{width:100%;height:570px;max-height:68vh;min-height:360px;object-fit:cover;border-radius:48% 48% 22px 22px;box-shadow:var(--shadow);border:9px solid rgba(255,250,244,.9)}
+.photo-tag{position:absolute;bottom:24px;left:-22px;background:var(--ivory);border:1px solid var(--line);border-radius:16px;padding:14px 20px;box-shadow:var(--shadow);font-family:'Playfair Display',serif;font-style:italic;color:var(--wine)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--gold);border-radius:999px;padding:13px 22px;background:linear-gradient(135deg,#a85f73,#7e4058);color:white;text-decoration:none;font-weight:700;font-size:.88rem;cursor:pointer;box-shadow:0 10px 25px #8951642b;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px #89516440}
+.btn.outline{background:transparent;color:var(--wine);box-shadow:none}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.center{text-align:center}
+.ornament{color:var(--gold);letter-spacing:.4em;margin:18px 0}
+.panel{background:rgba(255,250,244,.9);border:1px solid #ead8cc;border-radius:28px;box-shadow:var(--shadow);padding:clamp(22px,5vw,48px)}
+.letter-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:24px;align-items:stretch}
+.letter-image{min-height:460px;border-radius:22px;overflow:hidden}
+.letter-image img{width:100%;height:100%;object-fit:cover}
+.letter-copy{font-size:.98rem;line-height:2;color:#674954;white-space:normal}
+.letter-copy p{margin:0 0 16px}
+.quote{font-family:'Playfair Display',serif;font-size:1.25rem;font-style:italic;color:#9a5a6e;text-align:center;margin:26px auto;max-width:600px}
+.signature{font-family:'Great Vibes',cursive;font-size:2.5rem;color:#a95d75;text-align:right;margin-top:24px}
+.urdu{font-family:'Noto Nastaliq Urdu',serif;font-size:clamp(2.3rem,7vw,4.6rem);line-height:2.1;color:#9d536b;direction:rtl;text-align:center;margin:10px 0 0}
+.calligraphy-card{background:linear-gradient(145deg,#fffaf4,#f3dfe0);border:1px solid #d9bd9f;border-radius:26px;padding:32px;position:relative;overflow:hidden}
+.calligraphy-card:before,.calligraphy-card:after{content:"✧";position:absolute;color:#bd9b69;font-size:3rem;opacity:.7}
+.calligraphy-card:before{top:12px;left:20px}.calligraphy-card:after{bottom:12px;right:20px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.gallery img{width:100%;height:240px;object-fit:cover;border-radius:18px;border:5px solid #fff9f2;box-shadow:0 12px 28px #74455318}
+.love-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:25px}
+.love-item{border:1px solid #ead6d1;background:#fffaf5;border-radius:13px;padding:12px 8px;text-align:center;color:#835366;font-size:.82rem;box-shadow:0 4px 14px #85515b0b}
+.love-item strong{display:block;color:#a24f6c;font-size:.95rem;margin-bottom:4px}
+.love-item.last{grid-column:1/-1;background:linear-gradient(120deg,#f4d9dc,#fff4e8);font-size:1.05rem;padding:20px;border-color:#d5b17f}
+.love-item.last strong{font-size:1.4rem}
+.progress-wrap{width:min(500px,100%);height:8px;border-radius:20px;background:#ead9d5;margin:20px auto 8px;overflow:hidden}
+.progress{height:100%;width:100%;background:linear-gradient(90deg,#bd7184,#c7a16a);border-radius:20px}
+.small-note{font-size:.82rem;color:#96727a}
+.footer{text-align:center;padding:28px 12px;color:#99747a;font-size:.8rem}
+.float{position:fixed;bottom:-40px;pointer-events:none;z-index:30;animation:floatUp linear forwards;opacity:.8}
+.spark{position:absolute;color:#c5a36e;opacity:.65}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+@media(max-width:760px){
+ .nav{align-items:flex-start;flex-direction:column}.navlinks{justify-content:flex-start;width:100%;overflow-x:auto;flex-wrap:nowrap}.navlinks button{white-space:nowrap}
+ .page{padding:34px 14px 56px}.hero{grid-template-columns:1fr;gap:24px;min-height:unset}.hero-copy{text-align:center}.hero-copy .sub{margin:auto}.hero-photo{max-width:480px;margin:auto;width:100%}.hero-photo img{height:390px;min-height:0}.photo-tag{left:8px}
+ .letter-layout{grid-template-columns:1fr}.letter-image{min-height:260px;height:300px}.gallery{grid-template-columns:1fr 1fr}.gallery img{height:180px}.love-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <nav class="nav">
+    <div class="brand">For my Zariii ♡</div>
+    <div class="navlinks" aria-label="Website pages">
+      <button class="active" data-page="home">Home</button>
+      <button data-page="letter">My Letter</button>
+      <button data-page="love">100% Love</button>
+      <button data-page="gallery">Little Gallery</button>
+      <button data-page="dua">A Dua for You</button>
+    </div>
+  </nav>
+</header>
+
+<section class="page active" id="home">
+ <div class="wrap hero">
+  <div class="hero-copy">
+   <div class="kicker">A birthday surprise, made only for you</div>
+   <div class="ornament">✧ ── ♡ ── ✧</div>
+   <h1>Happiest Birthday</h1>
+   <div class="hero-name">My Zariii</div>
+   <p class="sub">To <b>Zara Ijaaz</b> — my favourite person, my comfort, and the sweetest part of my world. Today, every little sparkle is for you.</p>
+   <div class="actions">
+    <button class="btn" data-go="letter">Open your letter ♡</button>
+    <button class="btn outline" data-go="love">A little surprise ✧</button>
+   </div>
+   <p class="small-note">Made with love by Asad · Only yours, today, tomorrow and forever.</p>
+  </div>
+  <div class="hero-photo">
+   <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1100&q=85" alt="Elegant pastel birthday balloons and celebration">
+   <div class="photo-tag">For the girl who makes life sweeter ♡</div>
+  </div>
+ </div>
+</section>
+
+<section class="page" id="letter">
+ <div class="wrap">
+  <div class="center">
+   <div class="kicker">A few words from my heart</div>
+   <h2>To My Dearest Zariii</h2>
+   <div class="ornament">✧ ❀ ✧</div>
+  </div>
+  <div class="panel letter-layout">
+   <div class="letter-image">
+    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=85" alt="Romantic pink birthday cake with candles">
+   </div>
+   <article class="letter-copy">
+    <p>◄❥ ⃝⃪⃕‌🎀⃝⃪❥ <b>𝒁𝒂𝒓𝒊𝒊𝒊</b> ⍣⃪‌⋆‌⃝🧸 𝅥‌꯭𝆬‌ ⃪𝗶❥ ⃝⃪⃕‌𓆪ﮩ</p>
+    <p><b>🎀 HAPPIEST BIRTHDAY MERI JAAN 🎂❤️🌎🫀</b></p>
+    <p>Aj wo special din hai jis din meri Zariii is Duniya mein aayi thi 🥹❤️ Jitna ye din app ke liye special hai us se kahin zyada mere liye special hai, kiu ke agar ye din na hota to shayad meri Zindagi mein AAP na hoti aur na hi mujhe wo itni khubsurat khushiyan miltin jo aj app ki wajah se meri Zindagi ka hissa hain. 🥺💗</p>
+    <p>Alhamdulillah, I'm so lucky to have you (Aap) in my life. 🤍👀🫶🏻🧸💫</p>
+    <p>Yeah I'm lucky because... 🥹<br>I have the world's bestest partner Alhamdulillah ♥️🫂</p>
+    <p class="quote">نہ جانے ایسی بھی کیا دلگی ہے تم سے،<br>میں نے آخری خواہش میں بھی تیری محبت مانگی ہے ♥️🥀</p>
+    <p>Aj mei app se app ke is special day pa ek baat kehna chahta hun... 👀❤️</p>
+    <p><b>Begum Sahiba Ma Ap Sy Be Panah Mohabbat Karta Hun... 🙈🫶🏻💍💫</b></p>
+    <p>Mei apny ap ko bht lucky samjhta hun Q ke meri Zindagi mein app ho. App sirf meri mohabbat nahi, meri khushi, mera sukoon aur meri sab SE achi Aadat Hain. 🥺❤️<br>Kabhi kabhi sochta hun ke Allah Pak ne mujhe itni pyari insan kaise ata kar di. 🫀🧸🥹🥹🥹🥹</p>
+    <p>Alhamdulillah blessed to have you (Aap) in my life. 🌎💫</p>
+    <p>Allah Pak se meri bas yehi dua hai ke Hum dono Hamesha Sath rahen, har situation mein ek dosre ka sahara banen, kabhi ek dosre ka hath na chhoren. Har khushi, har pareshani aur Zindagi ke har mor par hum ek dosre ke sath rahen. Ameen 🤲🏻❤️ Sum Amen ♥️</p>
+    <p>Pata hai Zariii, jab bhi koi pareshani hoti hai to sab se pehle app se baat karne ka dil karta hai. App se baat karke meri sari tension, stress aur pareshaniyan door ho jati hain. 🥹</p>
+    <p>Thank You for being my unpaid therapy, my safe place and my biggest happiness. 🫂❤️🥺😘</p>
+    <p>I just want you to know that you are so precious to me. Main shayad har baar apny dil ki sari feelings words mein express na kar sakun, lekin meri har dua mein app ho, meri har khushi mein app ho aur meri har aane wali kal ki soch mein bhi sirf app ho. 🥺💍❤️</p>
+    <p><b>Happy Birthday once again Meri Zariii 🎂🎀🧸</b></p>
+    <p>Allah app ko Hamesha khush rakhe, apki har dua qabool ho, apki Zindagi khushiyon se bhari rahe aur app ke chehre ki ye pyari si smile kabhi kam na ho. Ameen 🤲🏻💗</p>
+    <p class="quote">You're not just a part of my life, you're my favourite part of it. 🥹❤️</p>
+    <p><b>I LOVE YOU MORE THAN WORDS CAN EVER EXPLAIN ❤️🌎🫀</b></p>
+    <div class="signature">Forever yours, Asad ♡</div>
+   </article>
+  </div>
+  <div class="center actions" style="justify-content:center"><button class="btn" data-go="love">See my 100% love ♡</button></div>
+ </div>
+</section>
+
+<section class="page" id="love">
+ <div class="wrap">
+  <div class="center">
+   <div class="kicker">A little counting of my infinite love</div>
+   <h2>One Hundred Little Reasons</h2>
+   <p class="sub">Every number is a little reminder. And even 100% is only the beginning.</p>
+   <div class="urdu">زارا اعجاز</div>
+   <div class="ornament">✧ ── ♡ ── ✧</div>
+   <div class="progress-wrap"><div class="progress"></div></div>
+   <p class="small-note">My love for you: 100% and always growing</p>
+  </div>
+  <div class="love-grid" id="loveGrid"></div>
+  <div class="center" style="margin-top:28px">
+   <p class="quote">I LOVE YOU 100% — and then a little more, every single day. 💖🫀</p>
+   <button class="btn" data-go="gallery">A few birthday moments ✧</button>
+  </div>
+ </div>
+</section>
+
+<section class="page" id="gallery">
+ <div class="wrap">
+  <div class="center">
+   <div class="kicker">A little celebration for a precious soul</div>
+   <h2>Made of Pink Dreams & Golden Wishes</h2>
+   <p class="sub">A tiny gallery of birthday magic, chosen for your special day.</p>
+   <div class="ornament">✧ ❀ ✧</div>
+  </div>
+  <div class="gallery">
+   <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=85" alt="Pastel birthday party decorations">
+   <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=85" alt="Warm celebration lights">
+   <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=85" alt="Birthday cake and candles">
+  </div>
+  <div class="panel center" style="margin-top:28px">
+   <div class="kicker">The birthday girl</div>
+   <div class="urdu">زارا اعجاز</div>
+   <div class="script" style="font-size:3rem">Zara Ijaaz · Zariii</div>
+   <p>May your world always be filled with softness, laughter, flowers, and all the love your heart can hold.</p>
+   <button class="btn" data-go="dua">One last thing, my jaan ♡</button>
+  </div>
+ </div>
+</section>
+
+<section class="page" id="dua">
+ <div class="wrap" style="max-width:820px">
+  <div class="panel center">
+   <div class="kicker">My prayer for you, today and always</div>
+   <h2>A Dua for My Zariii</h2>
+   <div class="ornament">✧ ❀ ✧</div>
+   <div class="calligraphy-card">
+    <div class="urdu">زارا اعجاز</div>
+    <div class="script" style="font-size:2.5rem">My beautiful Zara</div>
+   </div>
+   <p style="font-size:1.05rem">Allah Pak app ko Hamesha khush rakhe, apki har dua qabool ho, apki Zindagi khushiyon se bhari rahe aur app ke chehre ki ye pyari si smile kabhi kam na ho. Ameen 🤲🏻💗</p>
+   <p>May Allah keep us together, make us a source of peace for one another, and let us stand beside each other through every season of life. Ameen.</p>
+   <div class="quote">Only yours, today, tomorrow and forever. 🥹🎀</div>
+   <h3>In Sha Allah ♥️🌼</h3>
+   <div class="urdu" style="font-size:2rem">إنْ شاءَ اَلرَّبُّ</div>
+   <div class="signature" style="text-align:center">Forever yours, Asad</div>
+   <div class="ornament">≿━━━━༺❀༻━━━━≾</div>
+   <button class="btn" data-go="home">Back to the beginning ♡</button>
+  </div>
+ </div>
+</section>
+
+<footer class="footer">A little universe made for Zara Ijaaz · With love from Asad ♡</footer>
+<script>
+const pages=[...document.querySelectorAll('.page')];
+function showPage(id){
+ pages.forEach(p=>p.classList.toggle('active',p.id===id));
+ document.querySelectorAll('.navlinks button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));
+ window.scrollTo({top:0,behavior:'smooth'});
+ history.replaceState(null,'','#'+id);
+}
+document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.go)));
+const emojis=['❤️','🧡','💛','💚','💙','💜','💗'];
+const grid=document.getElementById('loveGrid');
+for(let n=1;n<=100;n++){
+ const item=document.createElement('div');
+ item.className='love-item'+(n===100?' last':'');
+ const emoji=emojis[(n-1)%emojis.length];
+ if(n===100){item.innerHTML='<strong>I LOVE YOU 100% 💖🫀</strong><span>Forever and beyond</span>';}
+ else{item.innerHTML='<strong>I love you '+n+'% '+emoji+'</strong><span>A little more, every day</span>';}
+ grid.appendChild(item);
+}
+function hearts(count=14){
+ const chars=['♡','♥','✧','🌸','💗'];
+ for(let i=0;i<count;i++){
+  const el=document.createElement('span');el.className='float';
+  el.textContent=chars[Math.floor(Math.random()*chars.length)];
+  el.style.left=Math.random()*100+'vw';el.style.fontSize=(15+Math.random()*22)+'px';
+  el.style.animationDuration=(5+Math.random()*5)+'s';el.style.animationDelay=(Math.random()*.6)+'s';
+  document.body.appendChild(el);setTimeout(()=>el.remove(),11000);
+ }
+}
+setTimeout(()=>hearts(15),600);
+if(location.hash && document.querySelector(location.hash+'.page')) showPage(location.hash.slice(1));
+</script>
+</body>
+</html>
